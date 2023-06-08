@@ -1,0 +1,21 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: 15% 30%;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:15px;
+}
+form input{
+    border-radius: 7px;
+    padding: 5px;
+}
+form p {
+    background-color: red;
+    color: black;
+}
