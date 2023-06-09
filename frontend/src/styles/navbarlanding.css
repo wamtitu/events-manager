@@ -1,0 +1,21 @@
+.landing-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: auto 10px;
+    box-shadow: 0 3px 0 rgb(209, 207, 207);
+}
+
+.landing-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 20%;
+    
+}
+.landing-nav li{
+    text-decoration: none;
+    
+}
+.landing-nav span{
+    color:rgb(32, 235, 235);
+}

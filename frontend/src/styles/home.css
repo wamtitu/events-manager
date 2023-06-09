@@ -1,0 +1,9 @@
+.mainContent-landing{
+    display: flex;
+}
+.main{
+    width: 70%;
+}
+.aside{
+    float: right;
+}
