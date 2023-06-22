@@ -2,11 +2,12 @@ import {useForm} from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import './../styles/register.css'
+import axios from 'axios'
 
 const schema = yup.object({
     fullname: yup.string().required(),
     email: yup.string().required(),
-    password: yup.string().required(),
+    userPassword: yup.string().required(),
     confirmPassword: yup.string().required(),
 })
 function Signup() {
@@ -15,8 +16,14 @@ function Signup() {
         resolver: yupResolver(schema)
     });
 
-    const onsubmit= (data)=>{
-        console.log(data)
+    const onsubmit= async (data)=>{
+        // event.preventDefault();
+        try {
+            const response = await axios.post('http://127.0.0.1:3000/users/register', data)
+            console.log('user created:',response)
+        } catch (error) {
+            console.log(error, ':user already exists')
+        }
     }
   return (
     <div className="form-container">
@@ -26,8 +33,8 @@ function Signup() {
             {errors.fullname && <p>{errors.fullname.message}</p>}
             <input placeholder="email" {...register('email')}/>
             {errors.email && <p>{errors.email.message}</p>}
-            <input placeholder="password" {...register('password')}/>
-            {errors.password && <p>{errors.password.message}</p>}
+            <input placeholder="userPassword" {...register('userPassword')}/>
+            {errors.userPassword && <p>{errors.userPassword.message}</p>}
             <input placeholder="confirmPassword" {...register('confirmPassword')}/>
             {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
             <input type="submit"/>

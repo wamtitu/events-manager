@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(7, 6, 6);
+    color: white;
+}
+.create-event-form-container{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    margin:5% 30%;
+    width: 50%;
+    border-radius: 10px;
+    color: black;
+}
+
+.event-form textarea{
+    height: 10rem;
+}

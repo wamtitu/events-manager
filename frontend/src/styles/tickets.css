@@ -1,0 +1,25 @@
+.ticket-page{
+    height: 70vh;
+}
+.ticket-page button{
+    border: none;
+    height: 5rem;
+    width: 15%;
+    border-radius: 10%;
+}
+
+.ticket{
+    background-image: linear-gradient(to left, azure, whitesmoke);
+    height: 25vh;
+    width: 30%;
+    align-self: center;
+    border-radius: 10px;
+    color: black;
+    margin-left: 35%;
+}
+.ticket-items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}

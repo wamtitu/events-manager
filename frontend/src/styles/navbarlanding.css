@@ -1,8 +1,10 @@
 .landing-nav{
     display: flex;
     justify-content: space-between;
-    padding: auto 10px;
+    height: 15vh;
     box-shadow: 0 3px 0 rgb(209, 207, 207);
+    /* background-color: azure; */
+    background-image: linear-gradient(to right, azure, whitesmoke);
 }
 
 .landing-nav ul {
@@ -18,4 +20,7 @@
 }
 .landing-nav span{
     color:rgb(32, 235, 235);
+}
+.landing-nav h3{
+    color: black;
 }

@@ -4,9 +4,10 @@ import Login from '../components/Login'
 import NotFound from '../components/NotFound'
 import Navbarlanding from '../components/navbar-landing'
 import Home from '../components/Home'
-// import Events from '../components/events'
 import Footer from '../components/Footer'
-import Myevents from './myevents'
+import Myevents from './Myevents'
+import CreateEvent from '../components/CreateEvent'
+import TicketsPage from './TicketsPage'
 // import OnsightEvents from './onsightEvents'
 // import OnlineEvents from './onlineEvents'
 
@@ -19,9 +20,9 @@ function LandingPage() {
         <Route path='/events' element = {<Myevents/>}></Route>
         <Route path='/register' element = {<Register/>}></Route>
         <Route path='/login' element = {<Login/>}></Route>
-        {/* <Route path='/online-events' element = {<OnlineEvents/>}></Route>
-        <Route path='/onsight-events' element = {<OnsightEvents/>}></Route> */}
         <Route path='*' element = {<NotFound/>}></Route>
+        <Route path='/createEvent' element = {<CreateEvent/>}></Route>
+        <Route path='/buyTickets' element = {<TicketsPage/>}></Route>
     </Routes>
     <Footer/>
     </BrowserRouter>
