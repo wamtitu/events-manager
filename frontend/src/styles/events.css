@@ -1,17 +1,24 @@
 .events{
+    margin-top: 13vh;
     display: flex;
     /* justify-content: space-between; */
 }
 
-.eventsNav{
+.eventsNav{  
+    
+    position: fixed;
+    top: 11vh;
+    left: 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background: azure;
+    /* background: rgb(69, 75, 75); */
+    background: rgb(34, 30, 30);
     border-radius: 10px;
-    /* border-right: 1px solid black; */
+    border-right: 1px solid black; 
+    z-index: 9999;
     width: 20%;
-    height: 70vh;
+    height: 75vh;
     margin-top:30px;
 }
 .eventsButtons{
@@ -24,20 +31,27 @@
 }
 .eventsButtons button{
     border: none;
-    background: azure;
+    background-color: rgb(34, 30, 30);
+    /* background: azure; */
     margin-bottom:15px ;
     height: 5rem;
+    color: azure;
 }
 .eventsButtons button:hover{
     background: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 .create-event{
     height: 6rem;
     border-radius: 10px;
     border: none;
-    background: rgb(212, 240, 240);
+    background-color: rgb(46, 45, 45);
+    color: azure;
 }
 .main-events{
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;

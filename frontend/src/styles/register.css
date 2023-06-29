@@ -1,9 +1,14 @@
 .form-container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(233, 228, 228);
-    margin: 5% 30%;
+        /* background-color: rgb(111, 119, 119); */
+    /* background: rgb(22, 253, 157); */
+    background: rgb(255, 23, 139);
+     margin-left:30%;
+    margin-top: 20vh;
     border-radius: 8px;
+    width: 40%;
+    color: black;
 }
 form{
     display: flex;

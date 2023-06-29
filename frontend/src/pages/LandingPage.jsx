@@ -8,8 +8,11 @@ import Footer from '../components/Footer'
 import Myevents from './Myevents'
 import CreateEvent from '../components/CreateEvent'
 import TicketsPage from './TicketsPage'
-// import OnsightEvents from './onsightEvents'
-// import OnlineEvents from './onlineEvents'
+import EventPage from './EventPage'
+import OnsightEvents from './onsightEvents'
+import OnlineEvents from './onlineEvents'
+import Updateevents from './updateEvent'
+import CreateTickets from './CreateTickets'
 
 function LandingPage() {
   return (
@@ -23,6 +26,11 @@ function LandingPage() {
         <Route path='*' element = {<NotFound/>}></Route>
         <Route path='/createEvent' element = {<CreateEvent/>}></Route>
         <Route path='/buyTickets' element = {<TicketsPage/>}></Route>
+        <Route path="/events/:id" element={<EventPage/>} />
+        <Route path="/events/edit/:id" element={<Updateevents/>} />
+        <Route path="/onlineevents" element={<OnlineEvents/>} />
+        <Route path="/liveevents" element={<OnsightEvents/>} />
+        <Route path="/createTickets" element={<CreateTickets/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

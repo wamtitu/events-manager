@@ -12,6 +12,7 @@ const schema = yup.object({
 
 function Login() {
     const {user, dispatch} = useContext(Context)
+    console.log(user)
 
      const navigate = useNavigate();
     const {register, handleSubmit, formState:{errors}} = useForm({
@@ -22,13 +23,11 @@ function Login() {
         // console.log(data)
         axios.post('http://127.0.0.1:3000/users/login', data)
             .then(({data}) => {
-                if(data.token && data.token !== null){
+                if(data.token){
                     console.log(data.token)
                     dispatch({type: "login success", payload: data})
                     alert('loggin success')
                     navigate('/events')
-                }else{
-                    dispatch({type: "login failed"})
                 }
             })
             .catch(({response}) => {

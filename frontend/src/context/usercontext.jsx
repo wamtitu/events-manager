@@ -20,8 +20,8 @@ const reducer = (state, action)=>{
 }
 
 const initial_state = {
-    user: JSON.parse(localStorage.getItem( 'user.token' ))
-    
+    user: JSON.parse(localStorage.getItem( 'user' )) || null
+  
 }
 
 export const Context = createContext(initial_state)
@@ -31,6 +31,7 @@ export const ContextProvider = ({children})=>{
 
     useEffect(()=>{
         localStorage.setItem('user', JSON.stringify(state.user)) 
+        console.log(state.user)
     },[state.user])
 
     return(

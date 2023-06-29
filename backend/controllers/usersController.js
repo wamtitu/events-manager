@@ -33,11 +33,3 @@ exports.getUsers = async (req, res) => {
 //   }
 
 // }
-exports.updateEvent = async (req, res)=>{
-  try {
-    
-  } catch (error) {
-    console.log(error)
-    res.send(error)
-  }
-}

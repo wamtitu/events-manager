@@ -1,4 +1,5 @@
 .ticket-page{
+    margin-top: 15vh;
     height: 70vh;
 }
 .ticket-page button{
@@ -10,7 +11,7 @@
 
 .ticket{
     background-image: linear-gradient(to left, azure, whitesmoke);
-    height: 25vh;
+    height: 35vh;
     width: 30%;
     align-self: center;
     border-radius: 10px;
@@ -20,6 +21,9 @@
 .ticket-items{
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
+}
+.noTickets{
+    display: flex;
+    justify-content: center;
 }
